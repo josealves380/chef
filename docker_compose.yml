@@ -1,0 +1,11 @@
+services:
+  next-app:
+    build:
+      context: .
+      dockerfile: C:\Users\neto4\Desktop\login\restaurant\chef\Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
